@@ -1,0 +1,658 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar - Ocupa todo el ancho */
+.navbar {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+}
+
+/* Contenido principal - Centrado con ancho controlado */
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+/* Ajustes específicos para los textos solicitados */
+body > h1,
+body > h2,
+body > h3,
+body > p,
+body > .info-text,
+body > .form-section,
+body > .divider {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Estilos específicos para los textos mencionados */
+body > h2:first-of-type { /* "¿Qué información es el contenido..." */
+    color: #0066cc;
+    font-size: 22px;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+body > h2:first-of-type + .info-text { /* Párrafo debajo */
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+body > h2:nth-of-type(2) { /* "Cómo" */
+    color: #0066cc;
+    font-size: 22px;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+body > h3 { /* "Vista nuestro blog" */
+    color: #333;
+    font-size: 18px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+body > h3 + .info-text { /* Párrafo debajo de "Vista nuestro blog" */
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Carousel */
+.carousel {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item svg {
+    height: 500px;
+}
+
+/* Bloques de contenido */
+.content-block {
+    margin: 4rem 0;
+}
+
+.content-block h2 {
+    color: #0066cc;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.content-block h3 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content-block .highlight {
+    font-weight: bold;
+}
+
+.content-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.main-title {
+    color: #0066cc;
+    font-size: 28px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.main-subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Formulario */
+.form-section {
+    margin-bottom: 25px;
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.divider {
+    border-top: 1px solid #ddd;
+    margin: 30px auto;
+}
+
+.blog-list {
+    columns: 2;
+    column-gap: 40px;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.blog-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    break-inside: avoid;
+}
+
+.blog-list a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.blog-list a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+.popular-posts {
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+}
+
+.popular-posts-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+}
+
+/* Footer - Ocupa todo el ancho */
+.comunicare-footer {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 40px 15px;
+    color: #fff;
+    background-color: #000;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-top, .footer-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.footer-column h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-column h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #999;
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+    .footer-column {
+        min-width: 50%;
+    }
+    
+    .carousel-item {
+        height: 400px;
+    }
+    
+    .carousel-item svg {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-list {
+        columns: 1;
+    }
+    
+    .content-image {
+        height: 200px;
+    }
+    
+    .carousel-item {
+        height: 350px;
+    }
+    
+    .carousel-item svg {
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-column {
+        min-width: 100%;
+    }
+    
+    .main-title {
+        font-size: 24px;
+    }
+    
+    .main-subtitle {
+        font-size: 16px;
+    }
+    
+    .carousel-item {
+        height: 300px;
+    }
+    
+    .carousel-item svg {
+        height: 300px;
+    }
+    
+    .content-block h2 {
+        font-size: 20px;
+    }
+    
+    .content-block h3 {
+        font-size: 16px;
+    }
+}
+/* ESTILOS GENERALES */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+/* SECCIÓN DE BLOGS - CENTRADO */
+.blog-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.blog-section h3 {
+    color: #0066cc;
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.info-text {
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+/* LISTAS DE BLOGS */
+.blog-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.blog-list {
+    columns: 2;
+    column-gap: 40px;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+    break-inside: avoid;
+}
+
+.blog-list li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.blog-list li:before {
+    content: "•";
+    color: #0066cc;
+    position: absolute;
+    left: 0;
+}
+
+.blog-list a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 2px 0;
+}
+
+.blog-list a:hover {
+    color: #004499;
+    text-decoration: underline;
+    transform: translateX(3px);
+}
+
+/* POSTS POPULARES */
+.popular-posts {
+    max-width: 800px;
+    margin: 50px auto 30px;
+    padding: 0 15px;
+}
+
+.popular-posts-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .blog-list {
+        columns: 1;
+    }
+    
+    .blog-list li {
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .blog-section h3, 
+    .popular-posts-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-list li {
+        font-size: 14px;
+    }
+    
+    .info-text {
+        font-size: 14px;
+    }
+}
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .header-section {
+            background-color: #f0f0f0;
+            padding: 60px 20px;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .header-section h2 {
+            color: #666;
+            font-size: 24px;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        
+        .btn-ver-mas {
+            background-color: #8B4F8B;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-ver-mas:hover {
+            background-color: #754075;
+        }
+        
+        .marketing-section {
+            background-color: #7BC3D4;
+            padding: 80px 0;
+            width: 100%;
+            min-height: 400px;
+        }
+        
+        .marketing-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+        
+        .marketing-image {
+            flex: 1;
+            max-width: 400px;
+        }
+        
+        .marketing-image img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .marketing-content {
+            flex: 1;
+            color: white;
+        }
+        
+        .marketing-content h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        
+        .marketing-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .btn-comenzar {
+            background-color: white;
+            color: #7BC3D4;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+        .btn-comenzar:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .passion-section {
+            background-color: #7B2CBF;
+            padding: 80px 0;
+            width: 100%;
+            min-height: 400px;
+        }
+        
+        .passion-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+        
+        .passion-content {
+            flex: 1;
+            color: white;
+        }
+        
+        .passion-content h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        
+        .passion-content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .passion-image {
+            flex: 1;
+            max-width: 400px;
+        }
+        
+        .passion-image img {
+            width: 100%;
+            height: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .marketing-container,
+            .passion-container {
+                flex-direction: column;
+                gap: 40px;
+                text-align: center;
+            }
+            
+            .marketing-content h2,
+            .passion-content h2 {
+                font-size: 24px;
+            }
+            
+            .marketing-section,
+            .passion-section {
+                padding: 60px 0;
+            }
+            }
+            

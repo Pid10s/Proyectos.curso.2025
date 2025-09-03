@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 76px; /* Espacio para el navbar fijo */
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR FIJO - La clase 'fixed-top' hace que se mantenga siempre visible -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+    <!-- Carousel más grande -->
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg aria-hidden="true" class="bd-placeholder-img" height="500" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                </svg>
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Example headline.</h1>
+                        <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg aria-hidden="true" class="bd-placeholder-img" height="500" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                </svg>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg aria-hidden="true" class="bd-placeholder-img" height="500" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                </svg>
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <h1 class="main-title">¡Consigue tu Kit Digital de hasta 12.000€!</h1>
+        <p class="main-subtitle">Contrata tu pack de servicios ahora y benefíciate de las ayudas del programa Kit Digital.</p>
+
+        <!-- Bloque 1: Imagen a la izquierda -->
+        <div class="content-block">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://www.comunicare.es/wp-content/uploads/2020/04/Persuasion-Digital-ok.png" alt="Marketing Digital" class="content-image">
+                </div>
+                <div class="col-md-6">
+                    <h2>Persuasión digital</h2>
+                    <p>Agencia de marketing digital experta en optimizar todos los canales en una estrategia común para lograr conexiones con el menor número de impactos y ciclos. Captamos LEADs mediante SEO, SEM, Redes sociales (Facebook, Twitter, Instagram, LinkedIn), Email Marketing, mejora usabilidad y conversión.</p>
+                    <h3>Aprenda cómo</h3>
+                    <p class="highlight">Varias personas, varios mensajes simultáneos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloque 2: Imagen a la derecha -->
+        <div class="content-block">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2">
+                    <img src="https://www.comunicare.es/wp-content/uploads/2020/08/2-1.png" alt="A/B Testing" class="content-image">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h2>Testing y Optimización</h2>
+                    <p>¿Bienvenido al A/B Testing? Prueba los argumentos comerciales con distintas audiencias para diseñar campañas publicitarias personalizadas por audiencia y localización. Prueba una agenda 100% enfocada en la medición de marketing digital.</p>
+                    <h3>Ampliar información</h3>
+                    <p>Medición constante y optimización de resultados para maximizar el ROI de tus campañas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloque 3: Imagen a la izquierda -->
+        <div class="content-block">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://www.comunicare.es/wp-content/uploads/2020/08/1-2.png" alt="Estrategia Digital" class="content-image">
+                </div>
+                <div class="col-md-6">
+                    <h2>Convencer no es fácil</h2>
+                    <p>Debemos encargarnos de difundir algo más que nuestros propios argumentos comerciales. Empieza un marketing más inteligente con una estrategia de marketing más elaborada. Combinar contenidos orgánicos con Facebook Ads aumenta el recuerdo de marca.</p>
+                    <h3>Estrategia integral</h3>
+                    <p>Desarrollo de contenidos que generen engagement y conversiones reales.</p>
+                </div>
+            </div>
+        </div>
+<body>
+    <!-- Sección Header -->
+    <section class="header-section">
+        <h2>Clientes que confían en nosotros</h2>
+        <a href="#" class="btn-ver-mas">Ver más</a>
+    </section>
+    
+    <!-- Sección Marketing Outsourcing -->
+    <section class="marketing-section">
+        <div class="marketing-container">
+            <div class="marketing-image">
+                <img src="https://www.comunicare.es/wp-content/uploads/2020/04/Marketing-Outsourcing-ok-1536x1249.png" alt="Marketing Outsourcing">
+            </div>
+            <div class="marketing-content">
+                <h2>Marketing outsourcing</h2>
+                <p>No gastes tiempo en</p>
+                <p>seleccionar, formar, medir a tu equipo.</p>
+                <p>Contrata expertos formados con una agencia especializada.</p>
+                <button class="btn-comenzar">Comenzar ya</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección Amamos lo que hacemos -->
+    <section class="passion-section">
+        <div class="passion-container">
+            <div class="passion-content">
+                <h2>Amamos lo que hacemos:</h2>
+                <p>SEO, SEM, Gestión de comunidades, Brand content, Email Marketing, Ecommerce, Landings, User experience, Optimización de conversiones.</p>
+            </div>
+            <div class="passion-image">
+                <img src="https://www.comunicare.es/wp-content/uploads/2020/04/Amamos-lo-que-Hacemos-ok-1536x744.png" alt="Amamos lo que hacemos">
+            </div>
+        </div>
+    </section>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>¿Quieres recibir un presupuesto personalizado?</h1>
+    
+    <div class="form-section">
+        <span class="form-label">Nombre y posición:</span>
+        <input type="text" class="form-input">
+        
+        <span class="form-label">Correo electrónico:</span>
+        <input type="email" class="form-input">
+        
+        <span class="form-label">Teléfono:</span>
+        <input type="tel" class="form-input">
+        
+        <span class="form-label">Nórdago:</span>
+        <input type="text" class="form-input">
+    </div>
+    
+    <div class="divider"></div>
+    
+    <h2>¿Qué información es el contenido de mis datos para que respondan a la consulta que he realizado?</h2>
+    
+    <p class="info-text">
+        Respondiste el informe. Su finalidad no debe ser necesaria, ni se puede verificar qué información puedes hacer. La primera experiencia. Desfrutarlos. Por su convicción, responder con los derechos sociales o personas que han sido utilizadas en una especie que formados valores. Puede consultar información adicional y detallada mediante Música de Resultado.
+    </p>
+    
+    <div class="divider"></div>
+    
+    <h2>Cómo</h2>
+    
+    <h3>Vista nuestro blog</h3>
+    
+    <p class="info-text">
+        Si quieres conocer más información sobre homólicas relacionadas con el marketing y la comunicación, en nuestro blog encontradas todo lo que procediste:
+    </p>
+    
+   <div class="blog-list-container">
+    <ul class="blog-list">
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Blog comunicación</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Blog marketing</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Blog marketing digital</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Blog publiccard</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Blog SEO</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Blog diseño web</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Blog creatividad web</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Cláusulas de marketing</a></li>
+    </ul>
+    
+   <div class="popular-posts">
+    <div class="popular-posts-title">Además, no dudes en visitar nuestras entradas más populares:</div>
+    <div class="blog-list-container">
+        <ul class="blog-list">
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia de publicidad</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia de comunicación</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencias de publicidad Madrid</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia publicidad</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencias de publicidad Barcelona</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencias de comunicación Madrid</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Emprensa de Marketing en Madrid</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencias de Marketing Madrid</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencias SEO Blades</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencias publicidad Madrid</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia SEO Valencia</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia influencera</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia de Marketing y publicidad</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencias de publicidad Valencia</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia de publicidad Sevilla</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencias de publicidad España</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia de Marketing</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia de Marketing online</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia de Marketing digital</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia Marketing</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia Marketing online</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia Marketing digital</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia comunicación Madrid</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Agencia Marketing Madrid</a></li>
+        </ul>
+    </div>
+</body>
+<body>
+    <footer class="comunicare-footer">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h2>Madrid</h2>
+                <p>
+                    <strong>Infogeomunicare es</strong><br>
+                    Avenida de Brasil 6, primera planta, Madrid España<br>
+                    <strong>134 624 598 897</strong>
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>CDMX</h3>
+                <p>
+                    <strong><a href="https://example.com/video" class="footer-link">mexico@comunicare.es</a></strong><br>
+                    Cral. Nústano<br>
+                    Escóberdo 595<br>
+                    Braguer de Carpathizares: 11959, CDMX<br>
+                    <strong>+9 55 4770 7777</strong>
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Bogotá</h3>
+                <p>
+                    <strong><a href="https://example.com/video" class="footer-link">colombia@comunicare.es</a></strong><br>
+                    Alz. y Foto: Jo. Bogotá<br>
+                    Carabinamarca, Colombia<br>
+                    <strong>+97 1 9697693</strong>
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Miami</h3>
+                <p>
+                    <strong><a href="https://example.com/video" class="footer-link">usa@comunicare.es</a></strong><br>
+                    78 SW 7th St. Miami, FL 33306 Estados Unidos<br>
+                    <strong>+1 924 227 0913</strong>
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Santiago de Chile</h3>
+                <p>
+                    <strong><a href="https://example.com/video" class="footer-link">chile@comunicare.es</a></strong><br>
+                    Avenida Apoguindo 5992 Las Condes Santiago de Chile: 7290004 Chile<br>
+                    <strong>+99 2 2581 3992</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-middle">
+            <div class="footer-column">
+                <h3>Servicios</h3>
+                <ul class="footer-list">
+                    <li><a href="https://example.com/video" class="footer-link">Agente digitalizador</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">SED ON-PAGE</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">SED OFF-PAGE</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link">Captación hacia Bid</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link">Captación hacia BIC</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link">Difusión de contenidos</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link">Modelo Marketing</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link">AGO</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link">Posicionamiento web</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="footer-link">Madrid</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Agencia de Google Ads</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Publicidad en redes sociales</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Publicidad en Amazon</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Agencia Google Shopping</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Servicios</h3>
+                <ul class="footer-list">
+                    <li><a href="https://example.com/video" class="footer-link">Local aceptation & Email Marketing</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Landing A/B Testing</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Email Marketing</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Remarketing</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Recuperación certifica</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Generación contenidos</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Community Management</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Email Marketing Mensual</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Estrategia y consultores</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Analítica web</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Landing A/B Testing</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Compra de moldes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Sectores</h3>
+                <ul class="footer-list">
+                    <li><a href="https://example.com/video" class="footer-link">Resilencias</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Cooperativas</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Instituciones públicas</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Promotoras</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Inmediatías</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Mascas de ropa</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Títulos online</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Hoteles</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Celerajes</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Gimnasios</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Abogados</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Concesionarios</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Redio sectores</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Búsquedas frecuentes</h3>
+                <ul class="footer-list">
+                    <li><a href="https://example.com/video" class="footer-link">Glosario de marketing digital</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Publicidad en redes sociales</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Agencia Adwords</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Agencia de publicidad</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Agencia SEO</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Marketing de contenido</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Publicidad en Google</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Marketing para autónomos</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Plan de Marketing</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Community Manager Madrid</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Consultor SEO Madrid</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Coupon Partners</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>About us</h3>
+                <ul class="footer-list">
+                    <li><a href="https://example.com/video" class="footer-link">Contacto</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Blog</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Comunicación</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Contenido</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Email Marketing</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Marketing</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Publicidad</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">SEM</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">SEO</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Social Ads</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Tabaja con nosotros</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Napa del sitio</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Alipicó Media</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">UNO Digital</a></li>
+                    <li><a href="https://example.com/video" class="footer-link">Indice de contenidos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Todos los derechos reservados - Comunicare 2019</p>
+        </div>
+    </footer>
+</body>
+</html>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

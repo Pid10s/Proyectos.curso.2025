@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section - Versión corregida -->
+    <header>
+        <div class="container">
+            <div class="header-layout">
+                <div style="display: flex; align-items: center; gap: 32px;">
+                    <h1>TRADE</h1>
+                    <div class="nav-links"></div>
+                    
+                    <!-- Contenedor de íconos/dropdowns -->
+                    <div class="nav-dashboard" style="display: flex; align-items: center; gap: 8px;">
+                        <!-- Dropdown 1 - Icono SVG -->
+                        <div class="dropdown">
+                            <a href="#" style="display: flex; align-items: center; gap: 5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                    <path d="M240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80H240Zm0-80h480v-640h-80v280l-100-60-100 60v-280H240v640Zm0 0v-640 640Zm200-360 100-60 100 60-100-60-100 60Z"/>
+                                </svg>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="curriculum.html">Página HTML</a>
+                                <a href="currculum.pdf" target="_blank">PDF</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Dropdown 2 - Bandera España -->
+                        <div class="dropdown">
+                            <a href="#">
+                                <img src="espana.gif" alt="España" style="height: 24px;">
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="https://www.youtube.com/user/elrubiusOMG" target="_blank">El Rubius</a>
+                                <a href="https://www.youtube.com/user/AuronPlay" target="_blank">AuronPlay</a>
+                                <a href="https://www.youtube.com/user/Willyrex" target="_blank">Willyrex</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Dropdown 3 - Hispano -->
+                        <div class="dropdown">
+                            <a href="#">Hispano</a>
+                            <div class="dropdown-content">
+                                <a href="https://www.youtube.com/user/Vegetta777" target="_blank">Vegetta777</a>
+                                <a href="https://www.youtube.com/user/TheGrefg" target="_blank">TheGrefg</a>
+                                <a href="https://www.youtube.com/user/JuanSGuarnizo" target="_blank">JuanSGuarnizo</a>
+                                <a href="https://www.youtube.com/user/LuzuVlogs" target="_blank">LuzuVlogs</a>
+                                <a href="https://www.youtube.com/user/Wismichu" target="_blank">Wismichu</a>
+                                <a href="https://www.youtube.com/user/Yuawi" target="_blank">Yuawi</a>
+                            </div>
+                        </div>
+                        
+                       <!-- Cambiar el dropdown "Mas" por uno con ID para el usuario -->
+                        <div class="dropdown hidden" id="user-menu-dropdown">
+                            <a href="#" class="dropdown-toggle" id="username-display">Usuario</a>
+                            <div class="dropdown-content">
+                                <a href="https://www.youtube.com/user/Dulceida" target="_blank">Dulceida</a>
+                                <a href="https://www.youtube.com/user/MarinaJoyce7" target="_blank">Marina Joyce</a>
+                            </div>
+                        </div>
+                    
+                    <!-- Barra de búsqueda -->
+                    <input type="text" class="search-dashboard" placeholder="Search...">
+                    
+                    <!-- Perfil de usuario -->
+                    <div class="user-dashboard" id="user-dashboard">
+                        <img class="avatar-dashboard" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3FZxV36GMskfjg2yfJ-OHTxBYuseoYhWJcw&s" alt="User"/>
+                        <span class="caret">&#9662;</span>
+                        <div class="user-dropdown" id="user-dropdown">
+                            <ul id="user-dropdown-list"></ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Botón Sign In -->
+                    <button class="button" id="signin-btn">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Resto del código permanece igual -->
+    <div id="login-modal" class="login-modal">
+        <div class="login-modal-bg"></div>
+        <div class="login-modal-content">
+            <span class="close" id="login-close">&times;</span>
+            <h2 class="login-title">USER SIGN UP</h2>
+            <form autocomplete="off">
+                <div class="input-group">
+                    <span class="input-icon">&#128100;</span>
+                    <input type="text" placeholder="Username" id="login-username" autocomplete="off" />
+                </div>
+                <div class="input-group">
+                    <span class="input-icon">&#128274;</span>
+                    <input type="password" placeholder="************" id="login-password" autocomplete="off" />
+                </div>
+                <button type="submit" class="login-btn">SIGN UP</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Ready to get started?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="button">Start free trial</button>
+            </div>
+            <div>
+                <h3>Your Best Value Proposition</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="images">
+                <div class="image-container">
+                    <img src=".spri" alt="Image 1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="image-container">
+                    <img src="download.svg" alt="Image SVG" width="20" height="20">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="image-container">
+    <!-- Reemplazamos <img> por un div con la clase del sprite -->
+    <div class="sprite"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <a href="#" class="learn-more">Learn More</a>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="solar-system-container">
+        <img src="planetas.jpg" usemap="#image-map" alt="Planetas">
+        <map name="image-map">
+            <area target="_blank" alt="sol" title="sol" href="https://es.wikipedia.org/wiki/Mercurio_(planeta)" coords="321,338,21" shape="circle">
+            <area target="_blank" alt="mercurio" title="mercurio" href="https://es.wikipedia.org/wiki/Venus_(planeta)" coords="421,336,28" shape="circle">
+            <area target="_blank" alt="venus" title="venus" href="https://es.wikipedia.org/wiki/Tierra" coords="529,342,24" shape="circle">
+            <area target="_blank" alt="tierra" title="tierra" href="https://es.wikipedia.org/wiki/Marte_(planeta)" coords="629,336,21" shape="circle">
+            <area target="_blank" alt="marte" title="marte" href="https://es.wikipedia.org/wiki/Júpiter_(planeta)" coords="738,336,47" shape="circle">
+            <area target="_blank" alt="jupiter" title="jupiter" href="https://es.wikipedia.org/wiki/Saturno_(planeta)" coords="876,345,52" shape="circle">
+            <area target="_blank" alt="saturno" title="saturno" href="https://es.wikipedia.org/wiki/Urano_(planeta)" coords="1000,334,28" shape="circle">
+            <area target="_blank" alt="urano" title="urano" href="https://es.wikipedia.org/wiki/Neptuno_(planeta)" coords="1104,332,22" shape="circle">
+            <area target="_blank" alt="pluton" title="pluton" href="https://es.wikipedia.org/wiki/Plutón" coords="1208,336,20" shape="circle">
+        </map>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin: 48px 0;">
+        <table style="border-collapse: collapse; box-shadow: 0 2px 10px rgba(0,0,0,.1);">
+            <tr>
+                <td style="background:#0000FF; color:white; height:80px; width:120px; text-align: center; font-weight:bold;">Azul</td>
+                <td style="background:#FFFF00; color:black; height:80px; width:120px; text-align: center; font-weight:bold;">Amarillo</td>
+                <td style="background:#FF0000; color:white; height:80px; width:120px; text-align: center; font-weight:bold;">Rojo</td>
+            </tr>
+            <tr>
+                <td style="height:40px; text-align: center;">#0000FF</td>
+                <td style="height:40px; text-align: center;">#FFFF00</td>
+                <td style="height:40px; text-align: center;">#FF0000</td>
+            </tr>
+            <tr>
+                <td style="height:40px; text-align: center;">rgb(0,0,255)</td>
+                <td style="height:40px; text-align: center;">rgb(255,255,0)</td>
+                <td style="height:40px; text-align: center;">rgb(255,0,0)</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-layout">
+                <div class="footer-info">
+                    <h4>TRADE</h4>
+                    <p>&copy; 2010 &ndash; 2020</p>
+                    <p>Privacy &ndash; Terms</p>
+                </div>
+                <div class="footer-links">
+                    <div class="column">
+                        <h5>Product</h5>
+                        <p>Product</p>
+                        <p>Product</p>
+                        <p>Product</p>
+                    </div>
+                    <div class="column">
+                        <h5>Features</h5>
+                        <p>Feature</p>
+                        <p>Feature</p>
+                        <p>Feature</p>
+                    </div>
+                    <div class="column">
+                        <h5>Resources</h5>
+                        <p>Resource</p>
+                        <p>Resource</p>
+                        <p>Resource</p>
+                    </div>
+                    <div class="column">
+                        <h5>Company</h5>
+                        <p>Company</p>
+                        <p>Company</p>
+                        <p>Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

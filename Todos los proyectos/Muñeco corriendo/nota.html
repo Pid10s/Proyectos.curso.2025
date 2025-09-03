@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Animación correr derecha/izquierda con botones</title>
+  <style>
+    body {
+      background: #222;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #gameArea {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 110px;
+      margin-bottom: 20px;
+    }
+    #character {
+      position: relative;
+      background: url('https://i.gyazo.com/7e0b27b7702e76035abece19ff90bfca.png') no-repeat;
+      transition: transform 0.1s;
+    }
+    #controls {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .arrow-btn {
+      font-size: 2.2em;
+      padding: 10px 20px;
+      border-radius: 12px;
+      border: none;
+      background: #fff;
+      color: #444;
+      cursor: pointer;
+      box-shadow: 2px 2px 9px #0003;
+      transition: background 0.2s;
+      user-select: none;
+    }
+    .arrow-btn:active {
+      background: #efefef;
+    }
+  </style>
+</head>
+<body>
+  <div id="gameArea">
+    <div id="character" class="sprite"></div>
+  </div>
+  <div id="controls">
+    <button id="leftBtn" class="arrow-btn">⬅️</button>
+    <button id="rightBtn" class="arrow-btn">➡️</button>
+  </div>
+
+  <script>
+    // Datos de cada frame: [backgroundX, backgroundY, width, height]
+    const frames = [
+      [-23,  -23,  57,  96 ],
+      [-87,  -19,  68, 100 ],
+      [-161, -20,  74,  99 ],
+      [-241, -21,  66,  98 ],
+      [-314, -19,  60, 100 ],
+      [-380, -21,  65,  98 ]
+    ];
+
+    const character = document.getElementById('character');
+    const gameArea = document.getElementById('gameArea');
+    let currentFrame = 0;
+    let running = false;
+    let intervalId = null;
+    let direction = 1; // 1=derecha, -1=izquierda
+
+    function setFrame(index) {
+      const [x, y, w, h] = frames[index];
+      character.style.backgroundPosition = `${x}px ${y}px`;
+      character.style.width = w + 'px';
+      character.style.height = h + 'px';
+      // Centrar el personaje en el área:
+      gameArea.style.width = (w + 10) + "px";
+      gameArea.style.height = (h + 10) + "px";
+    }
+
+    function animateRun() {
+      intervalId = setInterval(() => {
+        currentFrame = (currentFrame + 1) % frames.length;
+        setFrame(currentFrame);
+      }, 100);
+    }
+
+    function stopRun() {
+      clearInterval(intervalId);
+      running = false;
+      currentFrame = 0;
+      setFrame(currentFrame);
+    }
+
+    // Inicializa el primer frame al cargar
+    setFrame(0);
+
+    // Teclado
+    document.addEventListener('keydown', (e) => {
+      if ((e.key === 'ArrowRight' || e.key === 'ArrowLeft') && !running) {
+        running = true;
+        if(e.key === 'ArrowRight') direction = 1;
+        else if(e.key === 'ArrowLeft') direction = -1;
+        character.style.transform = `scaleX(${direction})`;
+        animateRun();
+      }
+    });
+    document.addEventListener('keyup', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        stopRun();
+        character.style.transform = 'scaleX(1)';
+      }
+    });
+
+    // Botones
+    const leftBtn = document.getElementById('leftBtn');
+    const rightBtn = document.getElementById('rightBtn');
+
+    // Mantener animación mientras el botón está presionado
+    leftBtn.addEventListener('mousedown', () => {
+      if (!running) {
+        running = true;
+        direction = -1;
+        character.style.transform = `scaleX(${direction})`;
+        animateRun();
+      }
+    });
+    rightBtn.addEventListener('mousedown', () => {
+      if (!running) {
+        running = true;
+        direction = 1;
+        character.style.transform = `scaleX(${direction})`;
+        animateRun();
+      }
+    });
+
+    // Al soltar el botón o sacar el mouse del botón
+    function stopFromButton() {
+      stopRun();
+      character.style.transform = 'scaleX(1)';
+    }
+    leftBtn.addEventListener('mouseup', stopFromButton);
+    leftBtn.addEventListener('mouseleave', stopFromButton);
+    rightBtn.addEventListener('mouseup', stopFromButton);
+    rightBtn.addEventListener('mouseleave', stopFromButton);
+
+    // Para soportar también en móviles
+    leftBtn.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      if (!running) {
+        running = true;
+        direction = -1;
+        character.style.transform = `scaleX(${direction})`;
+        animateRun();
+      }
+    });
+    rightBtn.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      if (!running) {
+        running = true;
+        direction = 1;
+        character.style.transform = `scaleX(${direction})`;
+        animateRun();
+      }
+    });
+    leftBtn.addEventListener('touchend', stopFromButton);
+    rightBtn.addEventListener('touchend', stopFromButton);
+  </script>
+</body>
+</html>

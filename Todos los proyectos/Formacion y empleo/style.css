@@ -1,0 +1,451 @@
+ body {
+      margin: 0;
+      background: #f5f7fa;
+      font-family: Arial, sans-serif;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(to bottom, #a8c8e7 70%, #f5f7fa);
+      padding: 20px 0 12px 0;
+      text-align: center;
+      position: relative;
+      min-height: 180px;
+    }
+    .header-logos img {
+      height: 48px;
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+    .titulo-header {
+      color: #fff;
+      margin-top: 13px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 1.3em;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px #617ca4;
+    }
+    nav {
+      background: #fff;
+      text-align: center;
+      box-shadow: 0 1px 6px 0 #e6e6e6;
+      margin-bottom: 18px;
+    }
+    nav ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: inline-block;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 18px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+      padding: 16px 0;
+      font-size: 1.04em;
+    }
+    nav ul li a.active,
+    nav ul li a:hover {
+      color: #357ac0;
+      border-bottom: 2px solid #357ac0;
+    }
+    .container { width: 95%; max-width: 1100px; margin: auto; }
+    .section-title {
+      color: #2573b7;
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-top: 34px;
+      margin-bottom: 10px;
+      margin-left: 14px;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+    /* Noticias */
+    .noticias {
+      display: flex;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px #e3e3e3;
+      overflow: hidden;
+      margin-bottom: 34px;
+      min-height: 220px;
+    }
+    .noticias-img {
+      flex: 1.5;
+      background: #f9f9f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 320px;
+    }
+    .noticias-img img {
+      width: 96%;
+      border-radius: 3px;
+      margin: 12px;
+      box-shadow: 0 4px 12px #ddd;
+      max-height: 240px;
+      object-fit: contain;
+    }
+    .noticias-list {
+      flex: 2.1;
+      padding: 16px 16px 10px 12px;
+    }
+    .noticia {
+      display: flex;
+      align-items: start;
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 5px;
+      margin-bottom: 7px;
+      font-size: 0.97em;
+      flex-wrap: wrap;
+    }
+    .noticia:last-child { border-bottom: none; }
+    .noticia-img-mini {
+      width: 36px;
+      margin-right: 10px;
+      margin-top: 2px;
+    }
+    .noticia-content {
+      flex: 1;
+    }
+    .noticia-titulo {
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 2px;
+      font-size: 1em;
+    }
+    .noticia-fecha {
+      color: #868686;
+      font-size: 0.89em;
+    }
+    /* proyectos */
+    .proyectos {
+      background: #fff;
+      border-radius: 8px;
+      padding: 11px 0;
+      box-shadow: 0 2px 10px #e3e3e3;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 35px;
+      margin-bottom: 34px;
+    }
+    .proyectos img {
+      height: 63px;
+      background: #fff;
+      padding: 0 7px;
+      object-fit: contain;
+    }
+    /* Contacto */
+    .contacto {
+      display: flex;
+      background: #fff;
+      box-shadow: 0 2px 10px #e3e3e3;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 34px;
+      min-height: 220px;
+    }
+    .contacto-mapa {
+      flex: 1.3;
+      min-width: 240px;
+      min-height: 260px;
+      border: none;
+      line-height: 0;
+    }
+    .contacto-form {
+      flex: 2;
+      padding: 18px 30px 10px 26px;
+      font-size: 1em;
+    }
+    .contacto-form input,
+    .contacto-form textarea {
+      width: 93%;
+      margin-bottom: 8px;
+      padding: 6px 8px;
+      border-radius: 4px;
+      border: 1px solid #cacaca;
+      font-size: 1em;
+      margin-top: 2px;
+      margin-right: 12px;
+    }
+    .contacto-form textarea { height: 54px; resize: vertical; }
+    .contacto-form label { display: block; margin-top: 10px; }
+    .contacto-form small { color: #616161; font-size: 0.88em;}
+    .contacto-form button {
+      background: #2573b7;
+      color: #fff;
+      border: none;
+      padding: 7px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 8px;
+      font-size: 1em;
+    }
+    /* Footer */
+    footer {
+      background: #afd2f5;
+      padding: 27px 0 0 0;
+      color: #343d58;
+      text-align: center;
+      font-size: 1em;
+      border-top: 3px solid #d6ecfa;
+      margin-top: 30px;
+    }
+    .footer-nav {
+      margin-bottom: 13px;
+    }
+    .footer-nav a {
+      color: #357ac0;
+      text-decoration: none;
+      margin: 0 16px;
+      font-weight: bold;
+    }
+    .footer-info { margin-bottom: 15px; }
+    .footer-logos img {
+      height: 32px;
+      margin: 0 5px;
+      vertical-align: middle;
+    }
+    .social { margin: 5px 0 25px 0;}
+    .social img {height: 25px; margin:0 7px;}
+    @media (max-width: 850px) {
+      .noticias, .proyectos, .contacto {
+        flex-direction: column;
+      }
+      .noticias-img,.proyectos img {max-width: 100%;}
+      .container { width: 99%;}
+      nav ul li {margin: 0 7px;}
+    }
+    .seccion-noticias {
+  margin: 40px 0 0 0;
+}
+.section-noticias-titulo {
+  color: #2172b7;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin-bottom: 10px;
+  margin-left: 12px;
+}
+.noticias-chiquito {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px #e1e1e1;
+  overflow: hidden;
+  margin-bottom: 34px;
+  min-height: 225px;
+  border-top: 5px solid #2172b7;
+}
+.noticias-img {
+  flex: 1.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  min-width: 295px;
+  margin-right: 10px;
+}
+.noticias-img img {
+  width: 98%;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 3px;
+  margin: 8px;
+  box-shadow: 0 0 7px #ebebeb;
+}
+.noticias-list {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 12px 10px 0;
+}
+.noticia {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 0 10px 0;
+  font-size: 1em;
+}
+.noticia:last-child {
+  border-bottom: none;
+}
+.noticia-img-mini {
+  width: 60px;
+  min-width: 60px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-right: 13px;
+  margin-top: 2px;
+}
+.noticia-titulo {
+  font-weight: bold;
+  color: #2a2a2a;
+  font-size: 1.01em;
+  margin-top: 1px;
+  max-width: 420px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.noticia-fecha {
+  color: #7d7d7d;
+  font-size: 0.92em;
+  margin-top: 4px;
+}
+.noticia-icono {
+  font-style: normal;
+  margin-right: 3px;
+}
+@media (max-width: 800px) {
+  .noticias {
+    flex-direction: column;
+  }
+  .noticias-img {
+    min-width: 100%;
+    justify-content: flex-start;
+  }
+  .noticias-img img {
+    max-width: 100%;
+    margin: 0;
+  }
+  .noticias-list {
+    padding-left: 12px;
+  }
+}
+#footer {
+  background: #afd2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-barra {
+  /* ... */
+  border-top: 1px solid #fff; /* <-- Esto puede causar la línea blanca */
+  border-bottom: 1px solid #fff;
+}
+.footer-barra ul {
+  /* ... */
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.footer-barra li {
+  /* ... */
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 24px 24px 20px 24px;
+  min-height: 160px;
+}
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+  min-width: 340px;
+}
+
+.sprite1 {
+  background: url('https://www.formacionyempleo.org/wp-content/uploads/2024/04/logoglobera3-removebg-preview.png') no-repeat -243px -37px;
+  width: 50px;
+  height: 49px;
+}
+.sprite2 {
+  background: url('https://www.formacionyempleo.org/wp-content/uploads/2024/04/logoglobera3-removebg-preview.png') no-repeat -181px 0;
+  width: 49px;
+  height: 86px;
+}
+.sprite3 {
+  background: url('https://www.formacionyempleo.org/wp-content/uploads/2024/04/logoglobera3-removebg-preview.png') no-repeat -17px 0;
+  width: 148px;
+  height: 59px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 120px;
+  height: 48px;
+  margin: 0 44px;
+  background: #1684c4;
+  border-radius: 4px;
+  gap: 18px;
+}
+.rrss-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: none;
+}
+.rrss-icon svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer-info {
+  flex: 1;
+  text-align: right;
+  color: #fff;
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.footer-contact {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #fff;
+  line-height: 140%;
+}
+
+.footer-legal {
+  font-size: .98em;
+  color: #fff;
+}
+.footer-legal a {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer-legal a:hover {
+  color: #2573b7;
+}
+
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 4vw 30px 4vw;
+  }
+  .footer-info {
+    text-align: center;
+    margin-top: 28px;
+  }
+  .footer-logos {min-width:unset; margin-bottom: 18px;}
+  .footer-social {margin: 0 0 25px 0;}
+}
